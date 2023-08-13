@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+         crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles1.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">Dhanshree Patil</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <br><h1>About Me</h1><br>
+        <p><div class=hey>Hey there!</div></p>
+        <p>Welcome to my portfolio website!</p>
+        <p>I am a student and a passionate developer.</p>
+        <p>Exploring, learning and developing skills...</p>
+    </section>
+
+    <section id="work">
+        <h1>Work</h1>
+        <div class="work">
+            <br><h2>Project 1 : Happy Learning</h2>
+            <br>
+            <p>Happy learning is an application to find tuition classes at desired location from std. 1 to 10.</p>
+            <p>It consist of all information related to particular class, information about location, fees structure, proper address, timing and contact no.</p>
+            <p>This project was made using Java.</p>
+        </div>
+        <div class="work">
+            <br><h2>Project 2 : Online Voting System </h2>
+            <br><p>The Online Voting System is a web based application.</p>
+            <p>The system has a centralized database to keep records of all the Voters and Candidates and Final Results. This web based system is time saving, work load reduced information available at time and it provide security for the data.</p>
+            <p>This project was made using python.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <br><h1>Contact Me</h1>
+        <br><p>Feel free to reach out to me at dhanshreepatil51@gmail.com...</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+</html>
